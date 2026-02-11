@@ -10,4 +10,8 @@ class PostEntity {
     required this.title,
     required this.body,
   }); 
+
+  // Example method to validate the entity (Verifica se os campos são válidos)
+  bool isValid() => title.isNotEmpty && body.isNotEmpty;
+  
 }
