@@ -4,8 +4,8 @@ import 'package:flutter_mobile_challenge/shared/typedefs.dart';
 
 
 abstract class PostRepositoryInterface {
- AsyncResultPosts<List<PostEntity>> getPostList();
- AsyncResultPosts<PostEntity> getPostById(int id);
- //AsyncResultPosts<void> savePost(PostEntity post);
- //AsyncResultPosts<List<PostEntity>> getSavedPosts();
+ APELIDOLEGAL<List<PostEntity>> getPostList();
+ APELIDOLEGAL<PostEntity> getPostById(int id);
+ //APELIDOLEGAL<void> savePost(PostEntity post);
+ //APELIDOLEGAL<List<PostEntity>> getSavedPosts();
 }
