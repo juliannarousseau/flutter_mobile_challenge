@@ -13,7 +13,7 @@ class PostsRepositoryImpl implements PostRepositoryInterface {
   PostsRepositoryImpl(this.datasource);
 
   @override
-  AsyncResultPosts<List<PostEntity>> getPostList() async {
+  APELIDOLEGAL<List<PostEntity>> getPostList() async {
     try {
       final models = await datasource.getPosts(); // Chama datasource
       final entities = models.map((model) => model.toEntity()).toList(); // Converte models em entidades
@@ -24,7 +24,7 @@ class PostsRepositoryImpl implements PostRepositoryInterface {
   }
 
   @override
-  AsyncResultPosts<PostEntity> getPostById(int id) async {
+  APELIDOLEGAL<PostEntity> getPostById(int id) async {
     try {
       final model = await datasource.getPostById(id);
       final entity = model.toEntity();

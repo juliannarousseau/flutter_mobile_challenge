@@ -8,7 +8,7 @@ class GetPostsUseCase {
 
   GetPostsUseCase(this.repository); //Construtor que recebe o repositório
 
-  AsyncResultPosts<List<PostEntity>> call() async { //Função assincrona para pegar a lista de posts
+  APELIDOLEGAL<List<PostEntity>> call() async { //Função assincrona para pegar a lista de posts
     return await repository.getPostList(); //Chama a função do repositório para pegar a lista de posts
   }
 }

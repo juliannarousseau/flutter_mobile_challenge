@@ -1,3 +1,3 @@
 import 'package:dartz/dartz.dart';
 
-typedef AsyncResultPosts<T extends Object> = Future<Either<Exception, T>>;
+typedef APELIDOLEGAL<T extends Object> = Future<Either<Exception, T>>;
